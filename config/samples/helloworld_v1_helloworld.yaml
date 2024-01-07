@@ -1,0 +1,12 @@
+apiVersion: helloworld.example.com/v1
+kind: HelloWorld
+metadata:
+  labels:
+    app.kubernetes.io/name: helloworld
+    app.kubernetes.io/instance: helloworld-sample
+    app.kubernetes.io/part-of: helloworld-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: helloworld-operator
+  name: helloworld-sample
+spec:
+  # TODO(user): Add fields here

@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: helloworld-operator
 repo: helloworld-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: helloworld
+  kind: HelloWorld
+  path: helloworld-operator/api/v1
+  version: v1
 version: "3"
